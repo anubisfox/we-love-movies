@@ -15,8 +15,8 @@ app.use(cors()); //allows cors
 app.use(express.json()); //allows JSON parse
 //Routes
 app.use('/movies', moviesRouter);
-app.use('/reviews', reviewsRouter);
-app.use('/theaters', theatersRouter);
+//app.use('/reviews', reviewsRouter);
+//app.use('/theaters', theatersRouter);
 //Errors
 app.use(notFound); //No path
 app.use(errorHandler); //General

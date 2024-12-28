@@ -16,7 +16,7 @@ const DATABASE_URL =
 module.exports = {
   development: {
     client: "postgresql",
-    connection: DATABASE_URL,
+    connection: DEVELOPMENT_DATABASE_URL,
     pool: { min: 0, max: 5 },
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
@@ -31,7 +31,7 @@ module.exports = {
 
   production: {
     client: "postgresql",
-    connection: DATABASE_URL,
+    connection: PRODUCTION_DATABASE_URL,
     pool: { min: 0, max: 5 },
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
